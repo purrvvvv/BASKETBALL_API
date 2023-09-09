@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API PROJECT</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <div id="heading">
+    <a href=""><img src="images/basketball_207111.png" alt=""></a> 
+    <h1>NBA Latest News :</h1>
+    
+  </div>
+
+
+    <ul>
+      <% for (const articles of article) { %>
+        <li><a href="<%= articles.url %>"><%= articles.title %></a></li>
+      <% } %>
+    </ul>
+</body>
+</html>
